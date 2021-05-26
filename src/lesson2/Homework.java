@@ -50,11 +50,12 @@ public class Homework {
     }
 
     private static void checkSize(String[][] array) {
-        if (array.length != 4) {
+        int CORRECT_SIZE = 4;
+        if (array.length != CORRECT_SIZE) {
             throw new MyArraySizeException();
         }
         for (int i = 0; i < array.length; i++) {
-            if (array[i].length != 4) {
+            if (array[i].length != CORRECT_SIZE) {
                 throw new MyArraySizeException();
             }
         }
