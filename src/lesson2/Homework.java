@@ -2,6 +2,8 @@ package lesson2;
 
 public class Homework {
 
+    public static final int CORRECT_SIZE = 4;
+
     public static void main(String[] args) {
 
         String[][] array1 = {{"1", "2", "3", "4"}, {"5", "6", "7", "8"}, {"9", "10", "11", "12"}, {"13", "14", "15", "16"}};
@@ -50,7 +52,6 @@ public class Homework {
     }
 
     private static void checkSize(String[][] array) {
-        int CORRECT_SIZE = 4;
         if (array.length != CORRECT_SIZE) {
             throw new MyArraySizeException();
         }
