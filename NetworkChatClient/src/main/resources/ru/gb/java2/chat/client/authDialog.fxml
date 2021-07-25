@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gb.java2.chat.client.controllers.AuthController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="loginField" layoutX="14.0" layoutY="52.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+            <Label layoutX="109.0" layoutY="35.0" text="Введите логин:" />
+            <Label layoutX="105.0" layoutY="92.0" text="Введите пароль:" />
+            <PasswordField fx:id="passwordField" layoutX="76.0" layoutY="109.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+            <Button fx:id="authButton" layoutX="124.0" layoutY="161.0" mnemonicParsing="false" onAction="#executeAuth" text="Войти!" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
